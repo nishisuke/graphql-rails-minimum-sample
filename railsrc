@@ -1,0 +1,15 @@
+--skip-yarn
+--skip-keeps
+-M
+--skip-active-storage
+-C
+-S
+--skip-spring
+--skip-listen
+--skip-coffee
+-J
+--skip-turbolinks
+-T
+--skip-system-test
+--skip-bootsnap
+-f
