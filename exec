@@ -1,2 +1,16 @@
 GraphqlRailsMinimumSampleSchema.execute('{ users { name createdAt age friends { pairs { name } } } }').to_json
 GraphqlRailsMinimumSampleSchema.execute('query get_friends($user_id: Int!) { friends(user_id: $user_id) { pairs { name } } }', variables: { user_id: User.last.id } ).to_json
+
+
+{
+  users {
+    name
+    createdAt
+    age
+    friends {
+      pairs {
+	name
+      }
+    }
+  }
+}
